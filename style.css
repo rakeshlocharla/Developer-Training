@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333333;
+    line-height: 1.7;
+    padding: 30px 15px;
+}
+
+/* Main content container */
+.background {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Main heading */
+.heading {
+    color: #2563eb;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Paragraph headings and descriptions */
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+/* Learning checklist */
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px 12px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+/* Command lists */
+ol {
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+
+/* Individual list items */
+li {
+    padding: 5px 8px;
+    margin-bottom: 5px;
+}
+
+/* Subtle hover effect */
+li:hover {
+    background-color: #eff6ff;
+    border-radius: 5px;
+}
+
+/* @media query adjusts the layout for smaller screens aswell*/
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .background {
+        padding: 20px 15px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
