@@ -1,7 +1,7 @@
 This Repo contains the git commands I learned today
 15/10/26
 
-The commands i learned today are
+The Git commands i learned today are
 1. git init - to initialize empty git
 2. git status - to check status of my repo (untracked, modified, deleted, staged etc..)
 3. git add - adds the existing file to staging area
