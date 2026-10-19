@@ -1,0 +1,99 @@
+body{
+    background-color:white;
+    height:100vh;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;       /* Centers items vertically */
+  justify-content: center;   /* Centers the heading in the middle */
+  position: relative;        /* Allows the image to align relative to the header */
+  padding: 20px;             /* Adds a margin/space inside the border */
+}
+
+.header h1 {
+  margin: 0;                 
+  text-align: center;
+  font-family:"Headland One", serif;
+}
+
+.header img {
+  position: absolute;        
+  right: 40px;               
+  border-radius: 50%;        
+}
+
+.contact{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:7px;
+}
+.contact a{
+    color:rgb(30, 117, 217);
+    font-family:"Google Sans", sans-serif
+}
+h2{
+  font-family:"Headland One", serif;
+  text-decoration:underline;
+}
+.para{
+    font-family:"Google Sans", sans-serif
+}
+.card{
+    height:auto;
+    background-color:lightblue;
+    width:40vw;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+}
+.card h2{
+    text-align:center;
+}
+.card-layouts{
+    display:flex;
+    flex-direction:row;
+}
+
+.table{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+/* Center and scale the table nicely on the page */
+.portfolio-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse; /* Prevents double borders */
+    margin: 25px 0;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 0.95rem;
+    border-radius: 8px;
+}
+
+.portfolio-table th {
+    background-color: #d4790a; 
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 18px;
+    border-radius:10px, 10px;
+}
+
+.portfolio-table td {
+    padding: 12px 18px;
+    color: #3c4043; 
+    border-bottom: 1px solid #e8eaed; 
+}
+/* this part i used AI*/
+/* Alternating row colors (Zebra striping) for readability */
+.portfolio-table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+.portfolio-table tbody tr:hover {
+    background-color: #f1f3f4;
+    transition: background-color 0.2s ease;
+}
