@@ -97,3 +97,12 @@ h2{
     background-color: #f1f3f4;
     transition: background-color 0.2s ease;
 }
+.button{
+    background-color:rgb(6, 96, 231);
+    padding:10px;
+    margin:10px;
+    color:white;
+    border-radius:11px;
+    width:100px;
+    border-width:0;
+}
