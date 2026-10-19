@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Headland+One&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rakesh portfolio</title>
 </head>
+
 <body>
     <div>
-        <div>
-        <h1>RAKESH LOCHARLA</h1>
-        <img src="images/profile img.png" alt="profile_img" width="100px" height="100px" style="border-radius:50%">
+        <div class="header">
+            <h1>RAKESH LOCHARLA</h1>
+            <img src="images/profile img.png" alt="profile_img" width="80px" height="80px" style="border-radius:50%">
         </div>
-        <h2>Contact Details</h2>
-        <div>
-            <a href = "https://github.com/rakeshlocharla" target="_blank">GITHUB</a>
-            <br>
-            <a href = "rakeshlocharla@gmail.com">Mail</a>
-            <br>
-            <a href = "https://www.linkedin.com/in/rakesh-locharla-0b2971211/" target="_blank">Linkedin</a>
+        <div class="contact">
+            <a href="https://github.com/rakeshlocharla" target="_blank">Github</a>
+            <span class="divider"> | </span>
+            <a href="mailto:rakeshlocharla@gmail.com">rakeshlocharla@gmail.com</a>
+            <!-- Added mailto: so it opens email apps correctly -->
+            <span> | </span>
+            <a href="https://www.linkedin.com/in/rakesh-locharla-0b2971211/" target="_blank">Linkedin</a>
         </div>
-        
-        <h2>INTRODUCTION</h2>
-        <p>I'm Rakesh, I completed my Bachelors Degree in MohanBabu University in Computer Science.
-            I have done projects in python, Javascript. 
-            python, Javascript are my skills.
-            Recently I learned node.JS which is used in Backend Engineering.
-            I'm more intrested in Backend Engineering.. How the system works in backend
-            what plays major role in Backend
-            and recently i have done a project where we can integrate AI in the backend workflow
-        </p>
-        <h2>SKILLS</h2>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Node JS</li>
-            <li>SQL</li>
-        </ol>
+
+        <div class='card-layouts'>
+
+            <div class="card" style="width: 48%; padding: 20px; box-sizing: border-box;">
+                <h2>About Me</h2>
+                <p class="para">I'm Rakesh, I completed my Bachelors Degree in MohanBabu University in Computer Science.
+                    I have done projects in python, Javascript.
+                    python, Javascript are my skills.
+                    Recently I learned node.JS which is used in Backend Engineering.
+                    I'm more intrested in Backend Engineering.. How the system works in backend
+                    what plays major role in Backend
+                    and recently i have done a project where we can integrate AI in the backend workflow
+                </p>
+            </div>
+
+            <!-- CARD 2: Set explicit width and padding -->
+            <div class="card" style="width: 48%; padding: 20px; box-sizing: border-box;">
+                <h2>SKILLS</h2>
+                <ol class="para">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Node JS</li>
+                    <li>SQL</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="table">
         <h2>EDUCATIONAL DETAILS</h2>
-        <table>
-            <tr>
-                <th>Qualification</th>
-                <th>Institution</th>
-                <th>Year of Passing</th>
-                <th>Percentage</th>
-            </tr>
-            <tr>
-                <th>B-Tech</th>
-                <th>Mohan Babu University</th>
-                <th>2026</th>
-                <th>86%</th>
-            </tr>
-            <tr>
-                <th>Intermediate</th>
-                <th>Sri Chaitanya</th>
-                <th>2022</th>
-                <th>961</th>
-            </tr>
+        <table class="portfolio-table">
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B-Tech</td>
+                    <td>Mohan Babu University</td>
+                    <td>2026</td>
+                    <td>86%</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Sri Chaitanya</td>
+                    <td>2022</td>
+                    <td>96%</td>
+                </tr>
+            </tbody>
         </table>
+    </div>
         <br>
         <input type="text" placeholder="Leave me Message">
     </div>
 </body>
+
 </html>
